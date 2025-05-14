@@ -1,0 +1,141 @@
+/* Vidéo */
+
+video, iframe {
+  width: 100vw;
+  height: 40vw;
+  object-fit: cover;
+}
+
+/* Titre équipe */
+.equipe-titre {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+/* Grille des membres */
+.equipe-membres {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Carte membre */
+.membre-carte {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.membre-carte:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Photo */
+.membre-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+}
+
+/* Nom */
+.membre-nom {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Rôle */
+.membre-role {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+
+
+.about-container {
+  max-width: 80rem; /* max 1280px */
+  margin: 0 auto;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-description {
+  font-size: 1.125rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  line-height: 1.75rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-card {
+  background: white;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: scale(1.05);
+}
+
+.about-card h3 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #facc15; /* jaune */
+}
+
+.about-card p {
+  margin-top: 0.5rem;
+}
+
+.about-formula {
+  text-align: center;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.about-formula span {
+  font-weight: 700;
+  color: #facc15;
+}
+
+.contact{
+  color: #f5b301;
+}
+.tout{
+  background-color: #f0f2f5;
+}
+
+
+/* Responsive pour grands écrans */
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+

@@ -1,0 +1,110 @@
+.join {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.cotegauche {
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+}
+
+.cotegauche img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cotedroit {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 0px;
+}
+
+.cotedroit h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #ffbe00;
+  outline: none;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  padding: 12px;
+  background-color: #ffbe00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0b0903;
+}
+
+@media (max-width: 768px) {
+  .cotegauche, .cotedroit {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .cotedroit {
+    padding: 20px;
+  }
+
+  .cotedroit h1 {
+    font-size: 24px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 14px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+  }
+}

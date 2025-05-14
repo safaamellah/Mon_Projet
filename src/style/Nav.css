@@ -1,0 +1,113 @@
+.banner {
+  background-color: #f1c40f; /* vert doux */
+  color: #333;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  position: static;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Décaler le contenu principal pour qu'il ne passe pas sous la bannière */
+body {
+  padding-top: 0%; /* ajuste la valeur selon la hauteur réelle de ta bannière */
+}
+
+
+.navbar-custom {
+    background-color: #333; /* Couleur de fond du nav */
+    padding: 10px 20px; /* Espacement autour du contenu */
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between; /* Espacement entre les éléments */
+    align-items: center; /* Aligner verticalement */
+    cursor: pointer; 
+  }
+
+  
+  .logo img {
+    height: 50px; /* Taille du logo */
+  }
+  
+  .nav-links {
+    list-style: none; /* Enlever les puces des listes */
+    display: flex;
+    gap: 20px; /* Espacement entre les liens */
+  }
+  
+  .nav-links li {
+    display: inline-block;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Transition pour l'effet au survol */
+  }
+  
+  .nav-links a:hover {
+    color: #f1c40f; 
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .search-box input {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+  
+  .search-box button {
+    padding: 5px 10px;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-box button:hover {
+    background-color: #e67e22; /* Couleur du bouton au survol */
+  }
+  
+
+
+  @media (max-width: 1000px) {
+    .navbar-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  
+    .nav-links {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 0;
+    }
+  
+    .nav-links li {
+      flex: 0 1 auto;
+      text-align: center;
+    }
+  }
